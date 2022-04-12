@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./header";
-import MoreInfo from "./moreInfo";
+
 
 function Hero() {
     return (
@@ -11,7 +11,6 @@ function Hero() {
                 <h1 className="text-xl text-slate-100 my-6">I recognize that life is a dream, and I dream lucid.</h1>
                 <p className="text-sm text-zinc-400">I build dope shit.</p>
             </div>
-            <MoreInfo/>
         </>
     )
 }

@@ -1,0 +1,30 @@
+{
+    "notflix": {
+        "title":"Notflix",
+        "img":"",
+        "link":"https://notflix.dev",
+        "code":"https://github.com/dmroman395/Notflix",
+        "tech": ["React", "Firebase", "REST", "SASS", "Webpack"],
+        "info": {
+            "overview":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "inspiration":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+            "challenges":["Challenge #1", "Challenge #2","Challenge #3","Challenge #4"],
+            "solutions":["Solution #1", "Solution #2", "Solution #3", "Solution #4"],
+            "lessons":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        }
+    },
+    "covid": {
+        "title":"COVID Tracker",
+        "img":"",
+        "link":"https://covid-tracker-snowy.vercel.app/",
+        "code":"https://github.com/dmroman395/covid-tracker-next",
+        "tech": ["React", "Next", "React Three Fiber", "Express", "REST", "SASS", "Redux"],
+        "info": {
+            "overview":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "inspiration":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+            "challenges":["Challenge #1", "Challenge #2","Challenge #3","Challenge #4"],
+            "solutions":["Solution #1", "Solution #2", "Solution #3", "Solution #4"],
+            "lessons":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        }
+    }
+}
