@@ -9,17 +9,17 @@ function ProjectInfo({overview, inspiration, challenges, solutions, lessons}) {
         return <li>{solution}</li>
     })
     return (
-        <div>
-            <h1>Overview</h1>
-                <p>{overview}</p>
-            <h1>Inspiration</h1>
-                <p>{inspiration}</p>
-            <h1>Challenges</h1>
-                <ol>{chalList}</ol>
-            <h1>Solutions</h1>
-                <ol>{solList}</ol>
-            <h1>What I learned</h1>
-                <p>{lessons}</p>
+        <div className="m-10">
+            <h1 className="my-5 text-xl font-semibold">Overview</h1>
+                <p className="text-sm tracking-wide leading-6">{overview}</p>
+            <h1 className="my-5 text-xl font-semibold">Inspiration</h1>
+                <p className="text-sm tracking-wider leading-6">{inspiration}</p>
+            <h1 className="my-5 text-xl font-semibold">Challenges</h1>
+                <ol className="list-decimal ml-4">{chalList}</ol>
+            <h1 className="my-5 text-xl font-semibold">Solutions</h1>
+                <ol className="list-decimal ml-4">{solList}</ol>
+            <h1 className="my-5 text-xl font-semibold">What I learned</h1>
+                <p className="text-sm tracking-wide leading-6">{lessons}</p>
         </div>
     )
 }
