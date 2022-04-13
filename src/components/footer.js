@@ -7,7 +7,7 @@ function Footer() {
             <h1 className="font-semibold text-base">{'If you want to collaborate on crafting amazing experience for people – you are very welcome to contact me.'}</h1>
             <p className="my-5">{'I am available for freelance projects and full-time employment.'}</p>
             
-            <form action="https://formsubmit.co/4dbef3ded4ad3fba87469c1411c8dc69" method="POST" className="my-10">
+            <form action="https://formsubmit.co/4dbef3ded4ad3fba87469c1411c8dc69" method="POST" className="my-10" id='contact'>
                 <h1 className=" text-lg text-center font-semibold">Contact Me</h1>
                 <div className="flex flex-col">
                     <div className=" flex flex-col mt-3">

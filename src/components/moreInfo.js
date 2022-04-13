@@ -3,7 +3,7 @@ import MoreInfoCard from "./moreInfoCard";
 
 function MoreInfo() {
     return(
-        <div className="flex flex-col bg-neutral-800 p-10 sm:flex-row sm:justify-evenly sm:p-16 sm:gap-10 md:">
+        <div className="flex flex-col bg-neutral-800 p-10 sm:flex-row sm:justify-evenly sm:p-16 sm:gap-10" id='moreInfo'>
             <div className="flex flex-row justify-between gap-x-1 sm:flex-col sm:justify-evenly sm:gap-1 sm:w-[45%] sm:max-w-lg">
                 <MoreInfoCard category={'About Me'} desc={"Just a lil bit o'info about ya boiiii"} icon={'info'}/>
                 <MoreInfoCard category={'Skills'} desc={"Technologies and tolls I've worked with"} icon={'skills'}/>
