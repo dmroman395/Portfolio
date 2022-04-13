@@ -3,12 +3,11 @@ import Image from 'next/image'
 
 function Footer() {
     return (
-        <footer className="bg-blue-500 p-10">
-            <h1 className="font-semibold text-base">{'If you want to collaborate on crafting amazing experience for people – you are very welcome to contact me.'}</h1>
-            <p className="my-5">{'I am available for freelance projects and full-time employment.'}</p>
-            
-            <form action="https://formsubmit.co/4dbef3ded4ad3fba87469c1411c8dc69" method="POST" className="my-10" id='contact'>
-                <h1 className=" text-lg text-center font-semibold">Contact Me</h1>
+        <footer className="bg-blue-500 p-10 h-screen flex flex-col justify-evenly">
+            <h1 className="font-semibold text-base">{'If you want to collaborate on crafting an amazing experience for people – you are very welcome to contact me.'}</h1>
+            <p>{'I am available for freelance projects and full-time employment.'}</p>
+            <form action="https://formsubmit.co/4dbef3ded4ad3fba87469c1411c8dc69" method="POST" className="my-0" id='contact'>
+                <h1 className=" text-2xl text-center font-semibold">Contact Me</h1>
                 <div className="flex flex-col">
                     <div className=" flex flex-col mt-3">
                         <label for='name'>Name <span className="text-red-600">*</span></label>
@@ -41,7 +40,6 @@ function Footer() {
                     <a href='https://www.linkedin.com' target='_blank'><Image src='/images/linkedin.png' width={24} height={24} layout='fixed'/></a>
                 </div>
             </div>
-            
         </footer>
     )
 }

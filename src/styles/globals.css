@@ -4,13 +4,9 @@
 
 html {
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 body {
     background-color: rgba(45,46,50,255);
-    box-sizing: border-box;
-}
-
-.formField {
-    margin: 5px 0;
 }
