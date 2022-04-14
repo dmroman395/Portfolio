@@ -1,6 +1,7 @@
 import React from "react";
+import data from '../data.json'
 
-function MoreInfoCard({category, desc, icon}) {
+function MoreInfoCard({category, desc, icon, type, setInfo}) {
     let svg
 
     switch(icon) {
@@ -22,9 +23,20 @@ function MoreInfoCard({category, desc, icon}) {
         default:
             break;
     }
+
+    function handleClick() {
+        const cardInfo = {
+            type: data[type].type,
+            header: data[type].header,
+            subtext: data[type].subtext,
+            info: data[type].info
+        }
+
+        setInfo(cardInfo)
+    }
     
     return (
-        <div className="bg-neutral-700 p-3 rounded-lg w-1/3 justify-between sm:min-w-full sm:p-5">
+        <div className="bg-neutral-700 p-3 rounded-lg w-1/3 justify-between sm:min-w-full sm:p-5" onClick={handleClick}>
             <div className="flex flex-row justify-center align-middle sm:justify-between">
                 <h1 className="text-slate-100 text-xs sm:text-base sm:mb-2">{category}</h1>
                 {svg}

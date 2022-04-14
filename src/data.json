@@ -26,5 +26,23 @@
             "solutions":["Solution #1", "Solution #2", "Solution #3", "Solution #4"],
             "lessons":"Communicating the conceptual approach/UX strategy and reasoning behind it, is present during the whole process."
         }
+    },
+    "about":{
+        "type":"About Me",
+        "header": "Hey, I'm David.",
+        "subtext": "Self-taught. Driven. Ambitious.",
+        "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    "skills":{
+        "type":"Skills",
+        "header": "HTML | CSS | Javascript | React",
+        "subtext": "SASS | Material UI | Tailwind | Redux ",
+        "info": "Webpack | Jest | Cypress"
+    },
+    "focus": {
+        "type":"Current Focus",
+        "header": "Notflix 2.0",
+        "subtext": "Restructuring and refactoring entire project",
+        "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     }
 }
