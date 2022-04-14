@@ -36,7 +36,7 @@ function MoreInfoCard({category, desc, icon, type, setInfo}) {
     }
     
     return (
-        <div className="bg-neutral-700 p-3 rounded-lg w-1/3 justify-between sm:min-w-full sm:p-5" onClick={handleClick}>
+        <div className="bg-neutral-700 p-3 rounded-lg w-1/3 justify-between hover:cursor-pointer sm:min-w-full sm:p-5" onClick={handleClick}>
             <div className="flex flex-row justify-center align-middle sm:justify-between">
                 <h1 className="text-slate-100 text-xs sm:text-base sm:mb-2">{category}</h1>
                 {svg}
