@@ -9,7 +9,7 @@ function ProjectInfo({overview, inspiration, challenges, solutions, lessons}) {
         return <li className="md:leading-7">{solution}</li>
     })
     return (
-        <div className="m-10 md:w-[35%]">
+        <div className="p-10 md:w-[50%] md:p-16">
             <h1 className="my-5 text-xl font-semibold md:text-3xl">Overview</h1>
                 <p className="text-base tracking-wide leading-6 md:leading-7 md:my-10">{overview}</p>
             <h1 className="my-5 text-xl font-semibold md:text-3xl">Inspiration</h1>

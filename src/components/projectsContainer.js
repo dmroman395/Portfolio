@@ -8,11 +8,11 @@ const {notflix, covid} = data
 function ProjectsContainer() {
     return (
         <div className="bg-neutral-200 overflow-auto" id='projects'>
-            <div className="flex flex-col flex-grow md:flex-row md:justify-end">
+            <div className="flex flex-col md:flex-row md:justify-end">
                 <ProjectCard title={notflix.title} img={notflix.img} link={notflix.link} code={notflix.code} tech={notflix.tech} id={'project1'}/>
                 <ProjectInfo overview={notflix.info.overview} inspiration={notflix.info.inspiration} challenges={notflix.info.challenges} solutions={notflix.info.solutions} lessons={notflix.info.lessons}/>
             </div>
-            <div className="flex flex-col md:flex-row">
+            <div className="flex flex-col md:flex-row-reverse md:justify-end">
                 <ProjectCard title={covid.title} img={covid.img} link={covid.link} code={covid.code} tech={covid.tech} id={'project2'}/>
                 <ProjectInfo overview={covid.info.overview} inspiration={covid.info.inspiration} challenges={covid.info.challenges} solutions={covid.info.solutions} lessons={covid.info.lessons}/>
             </div>

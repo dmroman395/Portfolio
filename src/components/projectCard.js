@@ -5,11 +5,13 @@ function ProjectCard({title, img, link, code, tech, id}) {
     const [scrollPos, setScrollPos] = useState(0)
     const [project1Pos, setProject1Pos] = useState({})
     const [project2Pos, setProject2Pos] = useState({})
+    const [footerOff, setFooterOff] = useState (0)
 
     useEffect(() => {
         window.addEventListener('scroll', () => {
         setScrollPos(window.scrollY)
         })
+
         const project1 = document.getElementById('project1')
         const project1PosData = {
             project1Elm: project1,
@@ -26,28 +28,68 @@ function ProjectCard({title, img, link, code, tech, id}) {
         }
         setProject2Pos(project2PosData)
 
+        const footer = document.querySelector('footer')
+        setFooterOff(footer.offsetTop)
+
     },[])
 
     useEffect(() => {
         
         if (Object.keys(project1Pos).length == 0 || Object.keys(project2Pos).length == 0) return
 
-        if (scrollPos >= project1Pos.offsetTop && scrollPos < project2Pos.offsetTop) {
+        if(window.innerWidth < 768) return
+
+        if (scrollPos < project1Pos.offsetTop) {
+            project1Pos.project1Elm.style.position = 'relative'
+            project1Pos.project1Elm.style.alignSelf = 'flex-start'
+            return
+        }
+
+        if (scrollPos >= project1Pos.offsetTop && (scrollPos <= project2Pos.offsetTop - project1Pos.project1Elm.scrollHeight)) {
             project1Pos.project1Elm.style.position = 'fixed'
             project1Pos.project1Elm.style.top = '0'
             project1Pos.project1Elm.style.left ='0'
-        } else {
-            project1Pos.project1Elm.style.position = 'relative'
+            return
         }
 
-        if (scrollPos >= project2Pos.offsetTop && scrollPos < (project2Pos.offsetTop + project2Pos.offsetHeight)) {
+        if (scrollPos >= project2Pos.offsetTop - project1Pos.project1Elm.scrollHeight) {
+            project1Pos.project1Elm.style.position = 'relative'
+            project1Pos.project1Elm.style.alignSelf = 'flex-end'
+            // return
+        }
+
+
+
+
+
+
+        if (scrollPos < project2Pos.offsetTop) {
+            project2Pos.project2Elm.style.position = 'relative'
+            project2Pos.project2Elm.style.alignSelf = 'flex-start'
+            return
+        }
+
+        if (scrollPos >= project2Pos.offsetTop && (scrollPos <= (project2Pos.offsetTop + project2Pos.parentHeight) - project2Pos.project2Elm.scrollHeight)) {
             project2Pos.project2Elm.style.position = 'fixed'
             project2Pos.project2Elm.style.top = '0'
-            project2Pos.project2Elm.style.left ='0'
-
-        } else {
-            project2Pos.project2Elm.style.position = 'static'
+            project2Pos.project2Elm.style.right ='0'
+            return
         }
+
+        if (scrollPos >= project2Pos.offsetTop - project2Pos.project2Elm.scrollHeight) {
+            project2Pos.project2Elm.style.position = 'relative'
+            project2Pos.project2Elm.style.alignSelf = 'flex-end'
+            return
+        }
+
+        // if (scrollPos >= project2Pos.offsetTop && scrollPos < (project2Pos.offsetTop + project2Pos.offsetHeight)) {
+        //     project2Pos.project2Elm.style.position = 'fixed'
+        //     project2Pos.project2Elm.style.top = '0'
+        //     project2Pos.project2Elm.style.left ='0'
+
+        // } else {
+        //     project2Pos.project2Elm.style.position = 'static'
+        // }
 
     }, [scrollPos])
 
@@ -59,7 +101,7 @@ function ProjectCard({title, img, link, code, tech, id}) {
         }
     })
     return (
-        <div className="px-8 py-16 h-screen flex bg-lime-50 md:w-[55%]" id={id}>
+        <div className="px-8 py-16 h-screen flex flex-grow bg-lime-50 md:w-[50%]" id={id}>
             <div className="w-full h-fit self-center">
                 <h1 className="text-3xl text-center">{title}</h1>
                 <div className="my-3">
