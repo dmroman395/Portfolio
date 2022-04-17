@@ -1,12 +1,12 @@
 import React from "react";
 
 function ProjectInfo({overview, inspiration, challenges, solutions, lessons}) {
-    const chalList = challenges.map((challenge) => {
-        return <li className="md:leading-7">{challenge}</li>
+    const chalList = challenges.map((challenge, i) => {
+        return <li key={i} className="md:leading-7">{challenge}</li>
     })
 
-    const solList = solutions.map((solution) => {
-        return <li className="md:leading-7">{solution}</li>
+    const solList = solutions.map((solution, i) => {
+        return <li key={i} className="md:leading-7">{solution}</li>
     })
     return (
         <div className="p-10 md:w-[50%] md:p-16">

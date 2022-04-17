@@ -95,9 +95,9 @@ function ProjectCard({title, img, link, code, tech, id}) {
 
     const techList = tech.map((skill, i) => {
         if (i == tech.length - 1) {
-            return <li>{skill}</li>
+            return <li key={i}>{skill}</li>
         } else {
-            return <li>{skill} |</li>
+            return <li key={i}>{skill} |</li>
         }
     })
     return (
