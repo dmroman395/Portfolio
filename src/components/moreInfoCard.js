@@ -25,6 +25,7 @@ function MoreInfoCard({category, desc, icon, type, setInfo}) {
     }
 
     function handleClick() {
+        setInfo({})
         const cardInfo = {
             type: data[type].type,
             header: data[type].header,
@@ -32,7 +33,9 @@ function MoreInfoCard({category, desc, icon, type, setInfo}) {
             info: data[type].info
         }
 
-        setInfo(cardInfo)
+        setTimeout(() => {
+            setInfo(cardInfo)
+        }, 300)
     }
     
     return (
