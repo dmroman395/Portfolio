@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+    .animation-delay-2000 {
+        animation-delay: 2s;
+    }
+
+    .animation-delay-4000 {
+        animation-delay: 4s;
+    }
+}
+
 html {
     scroll-behavior: smooth;
     box-sizing: border-box;
@@ -13,4 +23,16 @@ html {
 
 .darkerBg {
     background-color: rgba(37,38,42,255)
+}
+
+.darkerGreen {
+    background-color: #95EF86;
+}
+
+.lightBlue {
+    background-color: #86EFE1;
+}
+
+.lightGreen {
+    background-color: #86EFAC;
 }
