@@ -8,11 +8,11 @@ import Footer from '../src/components/footer';
 
 export default function Home() {
   return (
-    <>
+    <div className='darkBg'>
       <Hero/>
       <MoreInfo/>
       <ProjectsContainer/>
       <Footer/>
-    </>
+    </div>
   )
 }

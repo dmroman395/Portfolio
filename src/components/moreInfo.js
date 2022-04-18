@@ -13,7 +13,7 @@ function MoreInfo() {
     },[])
 
     return(
-        <div className="h-screen flex flex-col justify-center gap-10 bg-neutral-800 p-12 sm:flex-row sm:justify-evenly sm:p-16 sm:gap-10" id='moreInfo'>
+        <div className="darkerBg h-screen flex flex-col justify-center gap-10 p-12 sm:flex-row sm:justify-evenly sm:p-16 sm:gap-10" id='moreInfo'>
             {/* <div className="flex flex-col justify-between gap-y-1 sm:flex-col sm:justify-evenly sm:gap-1 sm:w-[45%] sm:max-w-lg">
                 <MoreInfoCard category={'About Me'} desc={"Just a lil bit o'info about ya boiiii"} icon={'info'} type={'about'} setInfo={setInfo}/>
                 <MoreInfoCard category={'Skills'} desc={"Technologies and tools I've worked with"} icon={'skills'} type={'skills'} setInfo={setInfo}/>

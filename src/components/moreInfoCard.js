@@ -42,7 +42,7 @@ function MoreInfoCard({category, desc, icon, type, checked, handleInfo, currentV
     }
     
     return (
-        <div className={`${checked ? 'drop-shadow-2xl -translate-y-1 ' : ''}` + "transition-all ease-in-out duration-300 bg-neutral-700 p-5 rounded-lg justify-between hover:cursor-pointer sm:min-w-full sm:p-5"} onClick={handleClick}>
+        <div className={`${checked ? 'drop-shadow-2xl -translate-y-1 ' : ''}` + "transition-all ease-in-out duration-300 darkCard p-5 rounded-lg justify-between hover:cursor-pointer sm:min-w-full sm:p-5"} onClick={handleClick}>
             <div className="flex flex-row justify-between align-middle sm:justify-between">
                 <h1 className={`${checked ? 'text-green-300 ' : 'text-slate-100 '}` + "text-base sm:text-base sm:mb-2"}>{category}</h1>
                 {svg}

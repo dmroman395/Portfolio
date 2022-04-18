@@ -7,6 +7,14 @@ html {
     box-sizing: border-box;
 }
 
-body {
+.darkBg {
     background-color: rgba(45,46,50,255);
+}
+
+.darkCard {
+    background-color: rgba(47,48,52,255);
+}
+
+.darkerBg {
+    background-color: rgba(37,38,42,255)
 }

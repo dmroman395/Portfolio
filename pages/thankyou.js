@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function ThankYou() {
     return (
-        <div className='flex flex-col text-center h-screen align-middle justify-center'>
+        <div className='darkBg flex flex-col text-center h-screen align-middle justify-center'>
             <h1 className='text-slate-100 font-semibold text-3xl my-5'>Thanks for reaching out!</h1>
             <p className='text-zinc-400 my-2 text-lg'>I will get back to you as soon as I can.</p>
             <div className='flex justify-center'>
