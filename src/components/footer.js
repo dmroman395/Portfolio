@@ -5,9 +5,9 @@ function Footer() {
     return (
         <footer className="bg-blue-500 p-10 h-screen flex flex-col justify-evenly xl:p-40">
             <div className="flex flex-col md:flex-row md:gap-14 xl:gap-32">
-                <div className="flex flex-col justify-evenly md:max-w-[55%] xl:max-w-[50%] xl:gap-20">
-                    <h1 className="tracking-wide font-semibold text-base md:text-2xl lg:text-3xl xl:text-4xl">{'If you want to collaborate on crafting an amazing experience for people – you are very welcome to contact me.'}</h1>
-                    <p className="tracking-wide md:text-xl lg:text-2xl xl:text-3xl">{'I am available for freelance projects and full-time employment.'}</p>
+                <div className="flex flex-col justify-evenly md:max-w-[55%] lg:px-5 xl:max-w-[50%] xl:gap-20">
+                    <h1 className="tracking-wide font-semibold text-base md:text-2xl lg:text-4xl xl:text-5xl">{'If you want to collaborate on crafting an amazing experience for people – you are very welcome to contact me.'}</h1>
+                    <p className="tracking-wide md:text-xl lg:text-2xl xl:text-4xl">{'I am available for freelance projects and full-time employment.'}</p>
                 </div>
                 <form action="https://formsubmit.co/roman@davidmiguel.io" method="POST" className="my-0 flex-grow" id='contact'>
                     <h1 className=" text-2xl text-center font-semibold">Contact Me</h1>
@@ -38,7 +38,7 @@ function Footer() {
                 </form>
             </div>
             <div className="flex justify-between xl:mt-32">
-                <h1 className='text-lg sm:text-2xl lg:text-3xl'><span className='font-bold'>David</span><span className='text-neutral-300'>Roman</span></h1>
+                <h1 className='text-lg sm:text-2xl lg:text-3xl lg:px-5'><span className='font-bold'>David</span><span className='text-neutral-300'>Roman</span></h1>
                 <div className="flex gap-2">
                     <a href='https://github.com/dmroman395' target='_blank'><Image src='/images/github.png' width={24} height={24} layout='fixed'/></a>
                     <a href='https://www.linkedin.com' target='_blank'><Image src='/images/linkedin.png' width={24} height={24} layout='fixed'/></a>
