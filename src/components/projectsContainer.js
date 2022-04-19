@@ -7,7 +7,7 @@ const {notflix, covid} = data
 
 function ProjectsContainer() {
     return (
-        <div className="bg-neutral-200 overflow-auto" id='projects'>
+        <div className="darkerBg border-y border-neutral-800 overflow-auto" id='projects'>
             <div className="flex flex-col md:flex-row md:justify-end">
                 <ProjectCard title={notflix.title} img={notflix.img} link={notflix.link} code={notflix.code} tech={notflix.tech} id={'project1'}/>
                 <ProjectInfo overview={notflix.info.overview} inspiration={notflix.info.inspiration} challenges={notflix.info.challenges} solutions={notflix.info.solutions} lessons={notflix.info.lessons}/>

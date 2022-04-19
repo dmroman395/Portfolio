@@ -97,13 +97,13 @@ function ProjectCard({title, img, link, code, tech, id}) {
         if (i == tech.length - 1) {
             return <li key={i}>{skill}</li>
         } else {
-            return <li key={i}>{skill} |</li>
+            return <><li key={i}>{skill}</li><span className='text-zinc-400'> |</span></>
         }
     })
     return (
-        <div className="px-8 py-16 h-screen flex flex-grow bg-lime-50 md:w-[50%]" id={id}>
+        <div className="px-8 py-16 h-screen flex flex-grow darkBg md:w-[50%]" id={id}>
             <div className="w-full h-fit self-center">
-                <h1 className="text-3xl text-center">{title}</h1>
+                <h1 className="text-3xl text-center text-slate-100">{title}</h1>
                 <div className="my-3">
                     <Image
                         src={img}
@@ -112,12 +112,12 @@ function ProjectCard({title, img, link, code, tech, id}) {
                         layout='responsive'
                     />
                 </div>
-                <ul className="flex justify-evenly my-3">
+                <ul className="grid grid-cols-9 justify-items-center my-3 text-slate-100">
                     {techList}
                 </ul>
                 <div className="flex justify-around">
-                    <a href={link} target='_blank'>View Live</a>
-                    <a href={code} target='_blank'>View Source Code</a>
+                    <a href={link} target='_blank' className='underline text-green-300 hover:cursor-pointer'>View Live</a>
+                    <a href={code} target='_blank' className='underline text-green-300 hover:cursor-pointer'>View Source Code</a>
                 </div> 
             </div>  
         </div>
