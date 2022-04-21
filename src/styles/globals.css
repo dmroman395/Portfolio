@@ -35,6 +35,18 @@ html {
     border-radius: 15px;
 }
 
+.listItem:hover {
+    color: #64f4ab
+}
+
+.greenBg {
+    background-color: #64f4ab;
+}
+
+.greenText {
+    color: #64f4ab
+}
+
 .background {
     object-fit: cover;
     position: absolute;
@@ -52,22 +64,10 @@ html {
     background-color: rgba(37,38,42,255)
 }
 
-.darkerGreen {
-    background-color: #95EF86;
-}
-
-.lightBlue {
-    background-color: #86EFE1;
-}
-
-.lightGreen {
-    background-color: #86EFAC;
-}
-
 .infoCard {
     opacity: 0;
     transform: translateY(10px);
-    transition: 800ms ease-in;
+    transition: 500ms ease-in;
 }
 
 .show {

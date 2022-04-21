@@ -7,7 +7,7 @@ function Footer() {
             <div className="flex flex-col md:flex-row md:gap-14 xl:gap-32">
                 <div className="flex flex-col space-y-5 justify-evenly md:max-w-[55%] lg:px-5 xl:max-w-[50%] xl:gap-20">
                     <h1 className="text-slate-100 tracking-wide font-semibold text-base md:text-2xl lg:text-4xl xl:text-5xl">If you want to collaborate on crafting an amazing experience, you are very welcome to contact me.</h1>
-                    <p className="text-zinc-400 tracking-wide md:text-xl lg:text-2xl xl:text-4xl">I am <span className="text-green-300 decoration-green-300 underline">available</span> for freelance projects and full-time employment.</p>
+                    <p className="text-zinc-400 tracking-wide md:text-xl lg:text-2xl xl:text-4xl">I am <span className="greenText underline">available</span> for freelance projects and full-time employment.</p>
                 </div>
                 <form action="https://formsubmit.co/roman@davidmiguel.io" method="POST" className="my-0 flex-grow mt-12 sm:mt-0" id='contact'>
                     <h1 className="text-neutral-300 text-2xl text-center font-semibold">Contact Me</h1>
@@ -32,7 +32,7 @@ function Footer() {
                     <input type='hidden' name='_captcha' value='false'/>
                     <input type="hidden" name="_template" value="table"/>
                     <input type="hidden" name="_next" value='http://localhost:3000/thankyou'/>
-                    <button type='submit' className="w-full rounded-md p-2 font-medium bg-green-300">
+                    <button type='submit' className="w-full rounded-md p-2 font-medium greenBg">
                         Submit
                     </button>
                 </form>
