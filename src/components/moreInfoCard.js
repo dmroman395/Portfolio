@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 import data from '../data.json'
 
 function MoreInfoCard({category, desc, icon, type, checked, handleInfo, currentVal}) {
+    const [isVisible, setIsVisible] = useState(false)
+
     let svg
 
     switch(icon) {
@@ -27,6 +29,12 @@ function MoreInfoCard({category, desc, icon, type, checked, handleInfo, currentV
     function handleClick() {
         if( currentVal == icon) return
 
+        // console.log('before', cardRef.current.classList)
+
+        // cardRef.current.classList.remove('infoCard')
+
+        // console.log('after', cardRef.current.classList)
+
         handleInfo({})
 
         const cardInfo = {
@@ -40,9 +48,29 @@ function MoreInfoCard({category, desc, icon, type, checked, handleInfo, currentV
             handleInfo(cardInfo)
         }, 200)
     }
+
+    const cardRef = useRef()
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(entries => {
+            const entry = entries[0]
+
+            entry.target.classList.toggle('show')
+            setIsVisible(true)
+            entry.target.classList.add('duration-300')
+
+            if (entry.isIntersecting) observer.unobserve(cardRef.current)
+        },
+        {
+            threshold: 1,
+            rootMargin: '-200px'
+        }) 
+
+        observer.observe(cardRef.current)
+    },[])
     
     return (
-        <div className={`${checked ? 'drop-shadow-4xl -translate-y-1 ' : null}` + "transition ease-in-out duration-300 darkBg p-5 rounded-lg justify-between hover:cursor-pointer sm:min-w-full sm:p-7 lg:p-10 xl:p-16"} onClick={handleClick}>
+        <div ref={cardRef} className={`${checked ? 'drop-shadow-4xl -translate-y-1 ' : null}` + `${isVisible ? null : 'infoCard'} transition ease-in-out darkBg p-5 rounded-lg justify-between hover:cursor-pointer sm:min-w-full sm:p-7 lg:p-10 xl:p-16`} onClick={handleClick}>
             <div className="flex flex-row justify-between align-middle sm:justify-between">
                 <h1 className={`${checked ? 'text-green-300 ' : 'text-slate-100 '}` + "text-lg sm:text-2xl sm:mb-2 lg:text-3xl"}>{category}</h1>
                 {svg}
