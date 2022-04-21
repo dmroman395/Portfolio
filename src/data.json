@@ -36,8 +36,8 @@
     "skills":{
         "type":"Skills",
         "header": "HTML | CSS | Javascript | React",
-        "subtext": "SASS | Material UI | Tailwind | Redux ",
-        "info": "Webpack | Jest | Cypress"
+        "subtext": "SASS | Material UI | Next | Redux ",
+        "info": "Tailwind | Webpack | Jest | Cypress"
     },
     "focus": {
         "type":"Current Focus",
