@@ -101,7 +101,7 @@ function ProjectCard({title, img, link, code, tech, id}) {
         }
     })
     return (
-        <div className="px-8 py-16 h-screen flex flex-grow darkBg md:w-[50%]" id={id}>
+        <div className="px-8 py-16 divide-x-2 divide-x-reverse divide-zinc-50 h-screen flex flex-grow md:w-[50%]" id={id}>
             <div className="w-full h-fit self-center">
                 <h1 className="text-3xl text-center text-slate-100">{title}</h1>
                 <div className="my-3">

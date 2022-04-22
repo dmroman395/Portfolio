@@ -47,27 +47,44 @@ html {
     color: #64f4ab
 }
 
-.background {
+.vid {
     object-fit: cover;
     position: absolute;
     top: 0;
     left: 0;
     height: 100vh;
     width: 100vw;
+    z-index: 1;
+}
+
+.overlay {
+    background-color: black;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 2;
 }
 
 .darkBg {
-    background-color: rgba(45,46,50,255);
+    background-color: rgba(37,38,42,255)
 }
 
 .darkerBg {
-    background-color: rgba(37,38,42,255)
+    background-color: rgba(27,28,32,255)
 }
 
 .infoCard {
     opacity: 0;
     transform: translateY(10px);
     transition: 500ms ease-in;
+}
+
+.hide {
+    opacity: 0;
+    transform: translateY(10px);
 }
 
 .show {
