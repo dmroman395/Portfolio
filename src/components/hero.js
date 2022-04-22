@@ -19,7 +19,7 @@ function Hero() {
     },[])
 
     return (
-        <div className="h-screen flex flex-col justify-center relative">
+        <div className="parallax h-screen flex flex-col justify-center relative">
             <div className="background">
                 <video autoPlay muted loop className="vid">
                     <source src="../videos/background.mp4" type="video/mp4"/>

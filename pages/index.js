@@ -8,7 +8,7 @@ import Footer from '../src/components/footer';
 
 export default function Home() {
   return (
-    <div className='darkBg'>
+    <div className='wrapper'>
       <Hero/>
       <MoreInfo/>
       <ProjectsContainer/>
