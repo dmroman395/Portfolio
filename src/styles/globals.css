@@ -23,6 +23,7 @@ html {
     scroll-behavior: smooth;
     box-sizing: border-box;
     overflow-x: hidden;
+    background-color: rgba(27,28,32,255)
 }
 
 ::-webkit-scrollbar {
@@ -55,7 +56,7 @@ html {
 
 .background {
     z-index: 0;
-    transform: translateZ(-10px) translateY(-420px) scale(2.2);
+    transform: translateZ(-20px) translateY(-955px) scale(4);
 }
 
 .greenBg {
@@ -100,10 +101,6 @@ html {
     transform: translateY(10px);
 }
 
-.infoCard {
-
-}
-
 .hide {
     opacity: 0;
     transform: translateY(10px);
@@ -112,4 +109,10 @@ html {
 .show {
     opacity: 1;
     transform: translateY(-10px);
+}
+
+.divider {
+    height: inherit;
+    border: 1px solid rgba(47,48,52,100);
+    border-radius: 5px;
 }
