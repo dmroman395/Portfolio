@@ -44,6 +44,7 @@ html {
     overflow-y: scroll;
     overflow-x: hidden;
     perspective: 10px;
+    scroll-behavior: smooth;
 }
 
 .parallax {
@@ -94,10 +95,13 @@ html {
     background-color: rgba(27,28,32,255)
 }
 
-.infoCard {
+.moreInfo {
     opacity: 0;
     transform: translateY(10px);
-    transition: 500ms ease-in;
+}
+
+.infoCard {
+
 }
 
 .hide {

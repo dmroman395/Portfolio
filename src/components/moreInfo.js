@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import MoreInfoCard from "./moreInfoCard";
+import React, { useRef, useState, useEffect } from "react";
 import MoreInfoText from "./moreInfoText";
 import { Transition } from '@headlessui/react'
 import data from '../data.json'
@@ -8,13 +7,32 @@ import MoreInfoRadioGroup from "./moreInfoRadioGroup";
 function MoreInfo() {
     const [info, setInfo] = useState({})
 
+    const moreInfo = useRef()
+
     useEffect(() => {
         setInfo(data.about)
+        
+        const observer = new IntersectionObserver(entries => {
+            const entry = entries[0]
+
+            if (entry.isIntersecting) {
+                entry.target.classList.toggle('show')
+                entry.target.classList.toggle('moreInfo')
+                
+                observer.unobserve(moreInfo.current)
+            }
+        },
+        {
+            threshold: 0.5
+        }
+        )
+
+        observer.observe(moreInfo.current)
     },[])
 
     return(
         <div className="darkerBg flex items-center h-screen p-12 sm:px-16 sm:py-52" id='moreInfo'>
-            <div className="h-full w-full flex flex-col justify-center gap-10 sm:flex-row sm:items-center sm:justify-evenly sm:gap-10">
+            <div ref={moreInfo} className="moreInfo transition-all ease-in duration-300 h-full w-full flex flex-col justify-center gap-10 sm:flex-row sm:items-center sm:justify-evenly sm:gap-10">
                 <MoreInfoRadioGroup handleInfo={setInfo}/>
                 <Transition
                     className="flex flex-col justify-center gap-y-4 h-full min-w-[40%] sm:max-w-[45%] sm:justify-evenly md:max-w-[40%]"

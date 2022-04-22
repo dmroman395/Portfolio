@@ -51,28 +51,29 @@ function MoreInfoCard({category, desc, icon, type, checked, handleInfo, currentV
 
     const cardRef = useRef()
 
-    useEffect(() => {
-        const observer = new IntersectionObserver(entries => {
-            const entry = entries[0]
+    // useEffect(() => {
+    //     const observer = new IntersectionObserver(entries => {
+    //         const entry = entries[0]
 
-            console.log(entry.target.children[0].innerText, entry.isIntersecting)
+    //         console.log('target', entry.target)
 
-            if (entry.isIntersecting) {
-                entry.target.classList.toggle('show')
-                setIsVisible(true)
-                observer.unobserve(cardRef.current)
-            }
-        },
-        {
-            threshold: 0.5,
-            // rootMargin: '-300px'
-        }) 
+    //         if (entry.isIntersecting) {
+    //             entry.target.classList.toggle('show')
+    //             entry.target.classList.toggle('infoCard')
+    //             setIsVisible(true)
+    //             // observer.unobserve(cardRef.current)
+    //         }
+    //     },
+    //     {
+    //         threshold: 1,
+    //         rootMargin: '-250px'
+    //     }) 
 
-        observer.observe(cardRef.current)
-    },[])
+    //     observer.observe(cardRef.current)
+    // },[])
     
     return (
-        <div ref={cardRef} className={`${checked ? 'drop-shadow-4xl -translate-y-1 ' : null}` + `${isVisible ? null : 'infoCard'} transition duration-500 ease-in-out darkBg p-5 rounded-lg justify-between hover:cursor-pointer sm:min-w-full sm:p-7 lg:p-10 xl:p-16`} onClick={handleClick}>
+        <div ref={cardRef} className={`${checked ? 'drop-shadow-4xl -translate-y-1 ' : ''}` + `${isVisible ? '' : 'infoCard'} transition duration-500 ease-in-out darkBg p-5 rounded-lg justify-between hover:cursor-pointer sm:min-w-full sm:p-7 lg:p-10 xl:p-16`} onClick={handleClick}>
             <div className="flex flex-row justify-between align-middle sm:justify-between">
                 <h1 className={`${checked ? 'greenText ' : 'text-slate-100 '}` + "text-lg sm:text-2xl sm:mb-2 lg:text-3xl"}>{category}</h1>
                 {svg}
