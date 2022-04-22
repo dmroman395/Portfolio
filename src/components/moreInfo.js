@@ -13,7 +13,7 @@ function MoreInfo() {
     },[])
 
     return(
-        <div className="darkerBg flex items-center h-screen p-12 sm:px-16 sm:py-52" id='moreInfo'>
+        <div className="darkBg flex items-center h-screen p-12 sm:px-16 sm:py-52" id='moreInfo'>
             <div className="h-full w-full flex flex-col justify-center gap-10 sm:flex-row sm:items-center sm:justify-evenly sm:gap-10">
                 <MoreInfoRadioGroup handleInfo={setInfo}/>
                 <Transition
