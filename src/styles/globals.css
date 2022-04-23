@@ -56,7 +56,7 @@ html {
 
 .background {
     z-index: 0;
-    transform: translateZ(-20px) translateY(-955px) scale(4);
+    transform: translateZ(-20px) translateY(-930px) scale(3.1);
 }
 
 .greenBg {
@@ -109,6 +109,50 @@ html {
 .show {
     opacity: 1;
     transform: translateY(-10px);
+}
+
+.hideProjectCardLeft {
+    opacity: 0;
+    transform: translateX(-20px);
+}
+
+.showProjectCardLeft {
+    opacity: 1;
+    transform: translateX(0);
+    transition-duration: 500ms;
+}
+
+.hideProjectInfoLeft {
+    opacity: 0;
+    transform: translateX(-20px);
+}
+
+.showProjectInfoLeft {
+    opacity: 1;
+    transform: translateX(0);
+    transition-duration: 500ms;
+}
+
+.hideProjectCardRight {
+    opacity: 0;
+    transform: translateX(20px);
+}
+
+.showProjectCardRight {
+    opacity: 1;
+    transform: translateX(0);
+    transition-duration: 500ms;
+}
+
+.hideProjectInfoRight {
+    opacity: 0;
+    transform: translateX(20px);
+}
+
+.showProjectInfoRight {
+    opacity: 1;
+    transform: translateX(0);
+    transition-duration: 500ms;
 }
 
 .divider {

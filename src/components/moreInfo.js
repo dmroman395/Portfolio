@@ -23,7 +23,7 @@ function MoreInfo() {
             }
         },
         {
-            threshold: 0.6
+            threshold: .75
         }
         )
 

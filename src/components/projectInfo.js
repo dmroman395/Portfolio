@@ -1,6 +1,31 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 
-function ProjectInfo({overview, inspiration, challenges, solutions, lessons}) {
+function ProjectInfo({overview, inspiration, challenges, solutions, lessons, side}) {
+    const info = useRef()
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(entries => {
+            const entry = entries[0]
+
+            if (entry.isIntersecting) {
+
+                if (side === 'left') {
+                    entry.target.classList.toggle('showProjectInfoLeft')
+                    entry.target.classList.toggle('hideProjectInfoLeft')
+                } else {
+                    entry.target.classList.toggle('showProjectInfoRight')
+                    entry.target.classList.toggle('hideProjectInfoRight')
+                }
+                 observer.unobserve(info.current)
+            }
+        },
+        {
+            threshold: 0.4
+        }
+        )
+        observer.observe(info.current)
+    },[])
+
     const chalList = challenges.map((challenge, i) => {
         return <li key={i} className="md:leading-7">{challenge}</li>
     })
@@ -9,7 +34,7 @@ function ProjectInfo({overview, inspiration, challenges, solutions, lessons}) {
         return <li key={i} className="md:leading-7">{solution}</li>
     })
     return (
-        <div className="p-10 mb-12 mt-5 md:w-[50%] md:p-16">
+        <div ref={info} className={`${side === 'left' ? 'hideProjectInfoLeft' : 'hideProjectInfoRight'} p-10 mb-12 mt-5 md:w-[50%] md:p-16`}>
             <h1 className="text-slate-100 my-5 text-xl font-semibold md:text-3xl">Overview</h1>
                 <p className="text-zinc-400 text-base tracking-wide leading-6 md:leading-7 md:my-10">{overview}</p>
             <h1 className="text-slate-100 my-5 text-xl font-semibold md:text-3xl">Inspiration</h1>

@@ -1,8 +1,32 @@
-import React, { useState, useEffect } from 'react';
+import React, { useRef, useEffect } from 'react';
 import Image from 'next/image'
 
-function ProjectCard({title, img, link, code, tech, id}) {
+function ProjectCard({title, img, link, code, tech, id, side}) {
+    const project = useRef()
 
+    useEffect(() => {
+        const observer = new IntersectionObserver(entries => {
+            const entry = entries[0]
+
+            console.log(entries)
+
+            if (entry.isIntersecting) {
+
+                if (side === 'left') {
+                    entry.target.classList.toggle('showProjectCardLeft')
+                    entry.target.classList.toggle('hideProjectCardLeft')
+                } else {
+                    entry.target.classList.toggle('showProjectCardRight')
+                    entry.target.classList.toggle('hideProjectCardRight')
+                }
+                 observer.unobserve(project.current)
+            }
+        },
+        {
+            threshold: 1
+        })
+        observer.observe(project.current)
+    },[])
 
     const techList = tech.map((skill, i) => {
         if (i == tech.length - 1) {
@@ -12,8 +36,8 @@ function ProjectCard({title, img, link, code, tech, id}) {
         }
     })
     return (
-        <div className="px-8 py-16 divide-zinc-50 h-screen flex flex-grow md:w-[50%]" id={id}>
-            <div className="w-full h-fit self-center">
+        <div className={`relative md:sticky transition-all ease-in-out px-8 py-16 divide-zinc-50 h-screen flex flex-grow top-0 md:w-[50%]`} id={id}>
+            <div ref={project} className={`${side === 'left' ? 'hideProjectCardLeft' : 'hideProjectCardRight'} w-full h-fit self-center`}>
                 <h1 className="text-3xl text-center text-slate-100">{title}</h1>
                 <div className="my-3">
                     <Image
