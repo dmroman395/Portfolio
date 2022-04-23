@@ -8,8 +8,6 @@ function ProjectCard({title, img, link, code, tech, id, side}) {
         const observer = new IntersectionObserver(entries => {
             const entry = entries[0]
 
-            console.log(entries)
-
             if (entry.isIntersecting) {
 
                 if (side === 'left') {
@@ -23,7 +21,7 @@ function ProjectCard({title, img, link, code, tech, id, side}) {
             }
         },
         {
-            threshold: 1
+            threshold: .75
         })
         observer.observe(project.current)
     },[])

@@ -1,15 +1,50 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import Image from 'next/image'
 
 function Footer() {
+    const paragraph = useRef()
+    const form = useRef()
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(entries => {
+            const entry = entries[0]
+
+            if (entry.isIntersecting) {
+                entry.target.classList.toggle('showParagraph')
+                entry.target.classList.toggle('hideParagraph')
+                observer.unobserve(paragraph.current)
+            }
+        },
+        {
+            threshold: 0.5
+        })
+        observer.observe(paragraph.current)
+    },[])
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(entries => {
+            const entry = entries[0]
+
+            if (entry.isIntersecting) {
+                entry.target.classList.toggle('showForm')
+                entry.target.classList.toggle('hideForm')
+                observer.unobserve(form.current)
+            }
+        },
+        {
+            threshold: 0.5
+        })
+        observer.observe(form.current)
+    },[])
+
     return (
         <footer className="darkBg p-10 h-screen flex flex-col justify-evenly xl:p-40">
             <div className="flex flex-col md:flex-row md:gap-14 xl:gap-32">
-                <div className="flex flex-col space-y-5 justify-evenly md:max-w-[55%] lg:px-5 xl:max-w-[50%] xl:gap-20">
+                <div ref={paragraph} className="hideParagraph flex flex-col space-y-5 justify-evenly md:max-w-[55%] lg:px-5 xl:max-w-[50%] xl:gap-20">
                     <h1 className="text-slate-100 tracking-wide font-semibold text-base md:text-2xl lg:text-4xl xl:text-5xl">If you want to collaborate on crafting an amazing experience, you are very welcome to contact me.</h1>
                     <p className="text-zinc-400 tracking-wide md:text-xl lg:text-2xl xl:text-4xl">I am <span className="greenText underline">available</span> for freelance projects and full-time employment.</p>
                 </div>
-                <form action="https://formsubmit.co/roman@davidmiguel.io" method="POST" className="my-0 flex-grow mt-12 sm:mt-0" id='contact'>
+                <form ref={form} action="https://formsubmit.co/roman@davidmiguel.io" method="POST" className="hideForm my-0 flex-grow mt-12 sm:mt-0" id='contact'>
                     <h1 className="text-neutral-300 text-2xl text-center font-semibold">Contact Me</h1>
                     <div className="flex flex-col">
                         <div className=" flex flex-col mt-3">
