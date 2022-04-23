@@ -38,7 +38,7 @@ function Footer() {
     },[])
 
     return (
-        <footer className="darkBg p-10 h-screen flex flex-col justify-evenly xl:p-40">
+        <footer className="darkerBg p-10 h-screen flex flex-col justify-evenly xl:p-40">
             <div className="flex flex-col md:flex-row md:gap-14 xl:gap-32">
                 <div ref={paragraph} className="hideParagraph flex flex-col space-y-5 justify-evenly md:max-w-[55%] lg:px-5 xl:max-w-[50%] xl:gap-20">
                     <h1 className="text-slate-100 tracking-wide font-semibold text-base md:text-2xl lg:text-4xl xl:text-5xl">If you want to collaborate on crafting an amazing experience, you are very welcome to contact me.</h1>
