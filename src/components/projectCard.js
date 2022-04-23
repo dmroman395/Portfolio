@@ -27,10 +27,10 @@ function ProjectCard({title, img, link, code, tech, id, side}) {
     },[])
 
     const techList = tech.map((skill, i) => {
-        if (i == tech.length - 1) {
+        if (i === tech.length - 1) {
             return <li key={i}>{skill}</li>
         } else {
-            return <><li key={i}>{skill}</li><span className='text-zinc-400'> |</span></>
+            return <div key={i}><li>{skill}</li><span className='text-zinc-400'> | </span></div>
         }
     })
     return (

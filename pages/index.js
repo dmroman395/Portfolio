@@ -8,9 +8,9 @@ import Footer from '../src/components/footer';
 export default function Home() {
   return (
     <>
-    <head>
+    <Head>
       <title>David M. Roman | Portfolio</title>
-    </head>
+    </Head>
       <div className='wrapper'>
         <Hero/>
         <MoreInfo/>
