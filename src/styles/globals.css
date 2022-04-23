@@ -23,7 +23,8 @@ html {
     scroll-behavior: smooth;
     box-sizing: border-box;
     overflow-x: hidden;
-    background-color: rgba(27,28,32,255)
+    background-color: rgba(27,28,32,255);
+    font-family: 'Roboto Mono', monospace;
 }
 
 ::-webkit-scrollbar {
@@ -38,6 +39,10 @@ html {
 
 .listItem:hover {
     color: #64f4ab
+}
+
+.popFont {
+    font-family: 'Poppins', sans-serif !important;
 }
 
 .wrapper {
@@ -113,6 +118,15 @@ html {
 .show {
     opacity: 1;
     transform: translateY(-10px);
+}
+
+.hideProjectText {
+    opacity: 0;
+}
+
+.showProjectText {
+    opacity: 1;
+    transition-duration: 300ms;
 }
 
 .hideProjectCardLeft {

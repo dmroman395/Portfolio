@@ -10,6 +10,9 @@ export default function Home() {
     <>
     <Head>
       <title>David M. Roman | Portfolio</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com"/>
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet"/>
     </Head>
       <div className='wrapper'>
         <Hero/>

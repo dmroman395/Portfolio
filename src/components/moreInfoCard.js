@@ -27,7 +27,14 @@ function MoreInfoCard({category, desc, icon, type, checked, handleInfo, currentV
     function handleClick() {
         if( currentVal == icon) return
 
-        handleInfo({})
+        const reset = {
+            type: '',
+            header: '',
+            subtext: '',
+            info: ''
+        }
+
+        handleInfo(reset)
 
         const cardInfo = {
             type: data[type].type,
@@ -44,10 +51,10 @@ function MoreInfoCard({category, desc, icon, type, checked, handleInfo, currentV
     return (
         <div className={`${checked ? 'drop-shadow-4xl -translate-y-1 ' : ''}` + `transition duration-500 ease-in-out darkBg p-5 rounded-lg justify-between hover:cursor-pointer sm:min-w-full sm:p-7 lg:p-10 xl:p-16`} onClick={handleClick}>
             <div className="flex flex-row justify-between align-middle sm:justify-between">
-                <h1 className={`${checked ? 'greenText ' : 'text-slate-100 '}` + "text-lg sm:text-2xl sm:mb-2 lg:text-3xl"}>{category}</h1>
+                <h1 className={`${checked ? 'greenText ' : 'text-slate-100 '}` + "text-base sm:text-2xl sm:mb-2 lg:text-3xl"}>{category}</h1>
                 {svg}
             </div>
-            <p className="text-neutral-400 text-sm lg:text-base">{desc}</p>
+            <p className="text-neutral-400 text-xs lg:text-base">{desc}</p>
         </div>
     )
 }
