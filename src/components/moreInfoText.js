@@ -15,10 +15,6 @@ function MoreInfoText({type, header, subtext, info}) {
  
    styleAsterisks()
 
-//    useEffect(() => {
-//         text.current.classList.add('hideProjectText')
-//    },[])
-
     useEffect(() => {
         text.current.classList.add('hideProjectText')
         text.current.classList.remove('showProjectText')

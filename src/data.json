@@ -49,7 +49,7 @@
     },
     "skills":{
         "type":"Skills",
-        "header": "HTML | CSS | Javascript | React",
+        "header": "HTML | CSS | JavaScript | React",
         "subtext": "SASS | Material UI | Next | Redux ",
         "info": "Tailwind | Webpack | Jest* | Cypress*"
     },

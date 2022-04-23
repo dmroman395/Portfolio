@@ -14,7 +14,7 @@ function MoreInfoRadioGroup({handleInfo}) {
       </RadioGroup.Option>
       <RadioGroup.Option value="skills">
         {({ checked }) => (
-          <MoreInfoCard category={'Skills'} desc={"Technologies and tools I've worked with"} icon={'skills'} type={'skills'} checked={checked} handleInfo={handleInfo} currentVal={info}/>
+          <MoreInfoCard category={'Skills'} desc={"Technologies I've worked with"} icon={'skills'} type={'skills'} checked={checked} handleInfo={handleInfo} currentVal={info}/>
         )}
       </RadioGroup.Option>
       <RadioGroup.Option value="current">

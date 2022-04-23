@@ -48,20 +48,20 @@ function Footer() {
                     <h1 className="text-neutral-300 text-2xl text-center font-semibold">Contact Me</h1>
                     <div className="flex flex-col">
                         <div className=" flex flex-col mt-3">
-                            <label htmlFor='name' className="text-neutral-300">Name <span className="text-red-600">*</span></label>
+                            <label htmlFor='name' className="text-neutral-300 mb-2">Name<span className="text-red-600">*</span></label>
                             <input type='text' name='name' id='name' className="rounded-md" required/>
                         </div>
                         <div className=" flex flex-col mt-3">
-                            <label htmlFor='email' className="text-neutral-300">Email <span className="text-red-600">*</span></label>
+                            <label htmlFor='email' className="text-neutral-300 mb-2">Email<span className="text-red-600">*</span></label>
                             <input type='email' name='email' id='email' className="rounded-md"  required/>
                         </div>
                     </div>
                     <div className=" flex flex-col my-3">
-                        <label htmlFor='subject' className="text-neutral-300">Subject <span className="text-red-600">*</span></label>
+                        <label htmlFor='subject' className="text-neutral-300 mb-2">Subject<span className="text-red-600">*</span></label>
                         <input type='text' name='subject' id='subject' className="rounded-md"  required/>
                     </div>
                     <div className=" flex flex-col my-3">
-                        <label htmlFor='message' className="text-neutral-300">Message <span className="text-red-600">*</span></label>
+                        <label htmlFor='message' className="text-neutral-300 mb-2">Message<span className="text-red-600">*</span></label>
                         <textarea name="message" cols="40" rows="5" id='message' className="rounded-md resize-none" ></textarea>
                     </div>
                     <input type='hidden' name='_captcha' value='false'/>
