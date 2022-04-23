@@ -66,7 +66,7 @@ function Footer() {
                     </div>
                     <input type='hidden' name='_captcha' value='false'/>
                     <input type="hidden" name="_template" value="table"/>
-                    <input type="hidden" name="_next" value='http://localhost:3000/thankyou'/>
+                    <input type="hidden" name="_next" value='https://www.davidmiguel.io/thankyou'/>
                     <button type='submit' className="w-full rounded-md p-2 font-medium greenBg">
                         Submit
                     </button>
