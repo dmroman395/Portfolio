@@ -49,8 +49,8 @@ function ProjectCard({title, img, link, code, tech, id, side}) {
                     {techList}
                 </ul>
                 <div className="flex justify-around">
-                    <a href={link} target='_blank' className='underline greenText hover:cursor-pointer'>View Live</a>
-                    <a href={code} target='_blank' className='underline greenText hover:cursor-pointer'>View Source Code</a>
+                    <a href={link} target='_blank' rel="noreferrer" className='underline greenText hover:cursor-pointer'>View Live</a>
+                    <a href={code} target='_blank' rel="noreferrer" className='underline greenText hover:cursor-pointer'>View Source Code</a>
                 </div> 
             </div>  
         </div>
