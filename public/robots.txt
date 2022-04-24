@@ -1,0 +1,7 @@
+# Block all crawlers for /thankyou
+User-agent: *
+Disallow: /thankyou
+
+# Allow all crawlers
+User-agent: *
+Allow: /

@@ -10,6 +10,7 @@ export default function Home() {
     <>
     <Head>
       <title>David M. Roman | Portfolio</title>
+      <meta name='description' content="I am David Miguel Roman, a New York based, self-taught front-end developer with a strong desire to learn and grow as a developer."/>
       <link rel="preconnect" href="https://fonts.googleapis.com"/>
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet"/>
