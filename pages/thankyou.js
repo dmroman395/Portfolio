@@ -7,6 +7,7 @@ export default function ThankYou() {
         <Head>
             <title>David M. Roman | Thank You!</title>
             <meta name='description' content="Thanks for reaching out! I'll get back to you as soon as I can."/>
+            <meta name="robots" content="noindex,nofollow" />
             <link rel="preconnect" href="https://fonts.googleapis.com"/>
             <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
             <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet"/>

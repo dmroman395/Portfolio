@@ -1,7 +1,9 @@
-# Block all crawlers for /thankyou
-User-agent: *
-Disallow: /thankyou
-
-# Allow all crawlers
+# *
 User-agent: *
 Allow: /
+
+# Host
+Host: https://davidmiguel.io
+
+# Sitemaps
+Sitemap: https://davidmiguel.io/sitemap.xml
