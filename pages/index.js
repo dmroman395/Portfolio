@@ -15,9 +15,11 @@ export default function Home() {
         <meta property="og:title" content="David M. Roman | Portfolio" />
         <meta property="og:description" content="I'm David Miguel Roman, a New York based, self-taught, front-end developer with a strong desire to learn and grow."/>
         <meta property="og:image" content="https://davidmiguel.io/images/portfolio.jpeg"/>
+        <meta property="og:locale" content="en_US"/>
+	      <meta property="og:type" content="website"/>
         <link rel="canonical" href="https://davidmiguel.io" />
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin='true'/>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet"/>
       </Head>
       <div className='wrapper'>
