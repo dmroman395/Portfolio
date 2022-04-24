@@ -39,6 +39,7 @@ function ProjectCard({title, img, link, code, tech, id, side}) {
                 <h1 className="text-3xl text-center md:text-4xl lg:text-5xl xl:text-6xl text-slate-100">{title}</h1>
                 <div className="my-3">
                     <Image
+                        alt='screenshot of project'
                         src={img}
                         width={556}
                         height={407}
