@@ -45,6 +45,7 @@ function ProjectCard({title, img, link, code, tech, id, side}) {
                         height={407}
                         layout='responsive'
                         className='rounded-lg'
+                        priority
                     />
                 </div>
                 <ul className="flex flex-wrap justify-center my-3 text-slate-100 self-center lg:text-lg xl:text-2xl max-w-[400px] xl:max-w-[600px]">

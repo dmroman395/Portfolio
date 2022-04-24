@@ -79,8 +79,8 @@ function Footer() {
             <div className="flex justify-between xl:mt-32">
                 <h1 className='text-lg sm:text-2xl lg:text-3xl lg:px-5'><span className='font-bold text-slate-100'>David</span><span className='text-neutral-300'>Roman</span></h1>
                 <div className="flex gap-2">
-                    <a href='https://github.com/dmroman395' target='_blank' rel="noreferrer"><Image src='/images/github.png' alt='github logo' width={24} height={24} layout='fixed'/></a>
-                    <a href='https://www.linkedin.com' target='_blank' rel="noreferrer"><Image src='/images/linkedin.png' alt='linkedin logo' width={24} height={24} layout='fixed'/></a>
+                    <a href='https://github.com/dmroman395' target='_blank' rel="noreferrer"><Image priority src='/images/github.png' alt='github logo' width={24} height={24} layout='fixed'/></a>
+                    <a href='https://www.linkedin.com' target='_blank' rel="noreferrer"><Image priority src='/images/linkedin.png' alt='linkedin logo' width={24} height={24} layout='fixed'/></a>
                 </div>
             </div>
         </footer>
