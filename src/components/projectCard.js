@@ -36,7 +36,7 @@ function ProjectCard({title, img, link, code, tech, id, side}) {
     return (
         <div className={`relative md:sticky transition-all ease-in-out px-8 py-16 divide-zinc-50 h-screen flex flex-grow justify-center top-0 md:w-[50%] lg:px-16`} id={id}>
             <div ref={project} className={`${side === 'left' ? 'hideProjectCardLeft' : 'hideProjectCardRight'} flex flex-col gap-y-5 w-full h-fit self-center sm:max-w-[450px] lg:max-w-[550px] xl:max-w-[700px]`}>
-                <h1 className="text-3xl text-center md:text-4xl lg:text-5xl xl:text-6xl text-slate-100">{title}</h1>
+                <h1 className="text-3xl text-center md:text-4xl lg:text-5xl text-slate-100">{title}</h1>
                 <div className="my-3">
                     <Image
                         alt='screenshot of project'
@@ -48,12 +48,12 @@ function ProjectCard({title, img, link, code, tech, id, side}) {
                         priority
                     />
                 </div>
-                <ul className="flex flex-wrap justify-center my-3 text-slate-100 self-center lg:text-lg xl:text-2xl max-w-[400px] xl:max-w-[600px]">
+                <ul className="flex flex-wrap justify-center my-3 text-slate-100 self-center lg:text-lg xl:text-xl max-w-[400px] xl:max-w-[600px]">
                     {techList}
                 </ul>
                 <div className="flex justify-around">
-                    {link ? <a href={link} target='_blank' rel="noreferrer" className='underline greenText hover:cursor-pointer lg:text-lg xl:text-2xl'>View Live</a> : null}
-                    <a href={code} target='_blank' rel="noreferrer" className='underline greenText hover:cursor-pointer lg:text-lg xl:text-2xl'>View Source Code</a>
+                    {link ? <a href={link} target='_blank' rel="noreferrer" className='underline greenText hover:cursor-pointer lg:text-lg xl:text-xl'>View Live</a> : null}
+                    <a href={code} target='_blank' rel="noreferrer" className='underline greenText hover:cursor-pointer lg:text-lg xl:text-xl'>View Source Code</a>
                 </div> 
             </div>  
         </div>

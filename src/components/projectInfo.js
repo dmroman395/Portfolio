@@ -34,16 +34,16 @@ function ProjectInfo({overview, inspiration, challenges, solutions, lessons, sid
     })
     return (
         <div ref={info} className={`${side === 'left' ? 'hideProjectInfoLeft' : 'hideProjectInfoRight'} p-10 mb-12 mt-5 md:w-[50%] md:p-16`}>
-            <h1 className="text-slate-100 my-5 text-xl font-semibold md:text-3xl lg:text-4xl xl:text-5xl">Overview</h1>
-                <p className="text-zinc-400 text-base tracking-wider leading-6 md:leading-7 md:my-10 lg:text-lg xl:text-2xl xl:mb-12">{overview}</p>
-            <h1 className="text-slate-100 my-5 text-xl font-semibold md:text-3xl lg:text-4xl xl:text-5xl">Inspiration</h1>
-                <p className="text-zinc-400 text-base tracking-wider leading-6 md:leading-7 md:my-10 xl:text-2xl xl:mb-12">{inspiration}</p>
-            <h1 className="text-slate-100 my-5 text-xl font-semibold md:text-3xl lg:text-4xl xl:text-5xl">Challenges</h1>
-                <ol className="text-zinc-400 pl-4 xl:pl-9 list-decimal ml-4 md:my-10 xl:mb-12 xl:text-2xl">{chalList}</ol>
-            <h1 className="text-slate-100 my-5 text-xl font-semibold md:text-3xl lg:text-4xl xl:text-5xl">Solutions</h1>
-                <ol className="text-zinc-400 pl-4 xl:pl-9 list-decimal ml-4 md:my-10 xl:text-2xl xl:mb-12">{solList}</ol>
-            <h1 className="text-slate-100 my-5 text-xl font-semibold md:text-3xl lg:text-4xl xl:text-5xl">What I learned</h1>
-                <p className="text-zinc-400 text-base tracking-wider leading-6 md:leading-7 xl:text-2xl md:my-10">{lessons}</p>
+            <h1 className="text-slate-100 my-5 text-xl font-semibold md:text-3xl lg:text-4xl">Overview</h1>
+                <p className="text-zinc-400 text-base tracking-wider leading-6 md:leading-7 md:my-10 lg:text-lg xl:text-xl xl:mb-12">{overview}</p>
+            <h1 className="text-slate-100 my-5 text-xl font-semibold md:text-3xl lg:text-4xl">Inspiration</h1>
+                <p className="text-zinc-400 text-base tracking-wider leading-6 md:leading-7 md:my-10 xl:text-xl xl:mb-12">{inspiration}</p>
+            <h1 className="text-slate-100 my-5 text-xl font-semibold md:text-3xl lg:text-4xl">Challenges</h1>
+                <ol className="text-zinc-400 pl-4 xl:pl-9 list-decimal ml-4 md:my-10 xl:mb-12 xl:text-xl">{chalList}</ol>
+            <h1 className="text-slate-100 my-5 text-xl font-semibold md:text-3xl lg:text-4xl">Solutions</h1>
+                <ol className="text-zinc-400 pl-4 xl:pl-9 list-decimal ml-4 md:my-10 xl:text-xl xl:mb-12">{solList}</ol>
+            <h1 className="text-slate-100 my-5 text-xl font-semibold md:text-3xl lg:text-4xl">What I learned</h1>
+                <p className="text-zinc-400 text-base tracking-wider leading-6 md:leading-7 xl:text-xl md:my-10">{lessons}</p>
         </div>
     )
 }
