@@ -2,7 +2,7 @@
     "notflix": {
         "title":"Notflix",
         "img":"/images/notflix.jpeg",
-        "link":"https://notflix.dev",
+        "link":"https://notflix.one",
         "code":"https://github.com/dmroman395/Notflix",
         "tech": ["React", "Firebase", "REST", "SASS", "Webpack"],
         "info": {
@@ -45,7 +45,7 @@
         "type":"About Me",
         "header": "Hey, I'm David.",
         "subtext": "Self-taught. Driven. Ambitious.",
-        "info": "After graduating college, I asked myself \"What do I want to do with my life?\". I'll spare you the details of the various pursuits I made over the next few years, but eventually I decided to learn about Web Dev.\n\nHit fast forward and here I am, with the long term goal of becoming a Full-Stack Developer and eventually owning my own business."
+        "info": "After graduating college, I asked myself \"What do I want to do with my life?\". I'll spare you the details of the various pursuits I made over the next few years, but eventually I decided to learn about Web Dev.\n\nTwo years later and here I am, with the long term goal of becoming a Full-Stack Developer and eventually owning my own business."
     },
     "skills":{
         "type":"Skills",

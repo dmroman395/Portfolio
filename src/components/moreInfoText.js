@@ -5,15 +5,12 @@ function MoreInfoText({type, header, subtext, info}) {
 
     let modInfo
 
-    
-  
     function styleAsterisks() {
         if (info === undefined) {
             setTimeout(styleAsterisks,100) 
             return;
         }
         modInfo = info.replaceAll('*','<span class="greenText">*</span>')
-        console.log(modInfo)
     }
  
    styleAsterisks()
