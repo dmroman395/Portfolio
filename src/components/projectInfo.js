@@ -30,7 +30,7 @@ function ProjectInfo({overview, features,  lessons, side}) {
     })
 
     return (
-        <div ref={info} className={`${side === 'left' ? 'hideProjectInfoLeft' : 'hideProjectInfoRight'} p-10 mb-12 mt-5 md:w-[50%] md:p-16`}>
+        <div ref={info} className={`${side === 'left' ? 'hideProjectInfoLeft' : 'hideProjectInfoRight'} p-10 mb-12 mt-5 md:w-[50%] md:p-16 xl:px-28`}>
             <h1 className="text-slate-100 my-5 text-xl font-semibold md:text-3xl lg:text-4xl">Overview</h1>
                 <p className="text-zinc-400 text-base tracking-wider leading-6 md:leading-7 md:my-10 lg:text-lg xl:text-xl xl:mb-12">{overview}</p>
             <h1 className="text-slate-100 my-5 text-xl font-semibold md:text-3xl lg:text-4xl">Features</h1>
