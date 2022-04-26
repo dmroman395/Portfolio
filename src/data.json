@@ -1,51 +1,9 @@
 {
-    "notflix": {
-        "title":"Notflix",
-        "img":"/images/notflix.jpeg",
-        "link":"https://notflix.one",
-        "code":"https://github.com/dmroman395/Notflix",
-        "tech": ["React", "Firebase", "REST", "SASS", "Webpack"],
-        "info": {
-            "overview":"Artworks and illustrations were my gateway to the creative industry which led to the foundation of my own studio and to first steps in the digital world.",
-            "inspiration":"Starting with basic websites several years ago I found myself working as an Art Director for complex projects with a holistic approach soon. Visually appealing designs, subtle details and brand guidelines combined to innovative interfaces across various touch points became my daily companion.",
-            "challenges":["Challenge #1", "Challenge #2","Challenge #3","Challenge #4"],
-            "solutions":["Solution #1", "Solution #2", "Solution #3", "Solution #4"],
-            "lessons":"Communicating the conceptual approach/UX strategy and reasoning behind it, is present during the whole process."
-        }
-    },
-    "covid": {
-        "title":"COVID Tracker",
-        "img":"/images/covid.jpeg",
-        "link":"https://covid-tracker.info/",
-        "code":"https://github.com/dmroman395/covid-tracker-next",
-        "tech": ["React", "Next", "React Three Fiber", "Express", "REST", "SASS", "Redux"],
-        "info": {
-            "overview":"Artworks and illustrations were my gateway to the creative industry which led to the foundation of my own studio and to first steps in the digital world.",
-            "inspiration":"Starting with basic websites several years ago I found myself working as an Art Director for complex projects with a holistic approach soon. Visually appealing designs, subtle details and brand guidelines combined to innovative interfaces across various touch points became my daily companion.",
-            "challenges":["Challenge #1", "Challenge #2","Challenge #3","Challenge #4"],
-            "solutions":["Solution #1", "Solution #2", "Solution #3", "Solution #4"],
-            "lessons":"Communicating the conceptual approach/UX strategy and reasoning behind it, is present during the whole process."
-        }
-    },
-    "portfolio": {
-        "title":"Portfolio",
-        "img":"/images/portfolio.jpeg",
-        "link":null,
-        "code":"https://github.com/dmroman395/portfolio",
-        "tech": ["React", "Next", "Tailwind"],
-        "info": {
-            "overview":"Artworks and illustrations were my gateway to the creative industry which led to the foundation of my own studio and to first steps in the digital world.",
-            "inspiration":"Starting with basic websites several years ago I found myself working as an Art Director for complex projects with a holistic approach soon. Visually appealing designs, subtle details and brand guidelines combined to innovative interfaces across various touch points became my daily companion.",
-            "challenges":["Challenge #1", "Challenge #2","Challenge #3","Challenge #4"],
-            "solutions":["Solution #1", "Solution #2", "Solution #3", "Solution #4"],
-            "lessons":"Communicating the conceptual approach/UX strategy and reasoning behind it, is present during the whole process."
-        }
-    },
     "about":{
         "type":"About Me",
         "header": "Hey, I'm David.",
         "subtext": "Self-taught. Driven. Ambitious.",
-        "info": "After graduating college, I asked myself \"What do I want to do with my life?\". I'll spare you the details of the various pursuits I made over the next few years, but eventually I decided to learn about Web Dev.\n\nTwo years later and here I am, with the long term goal of becoming a Full-Stack Developer and eventually owning my own business."
+        "info": "After graduating college, I asked myself \"What do I want to do with my life?\". I'll spare you the details of the various pursuits I made over the next few years, but eventually I decided to learn about Web Development.\n\nTwo years later, here I am with the long term goal of becoming a Full-Stack Developer and eventually owning my own business."
     },
     "skills":{
         "type":"Skills",
@@ -58,5 +16,41 @@
         "header": "Automated Testing",
         "subtext": "Unit, integration and end-to-end tests.",
         "info": "After four years of working in an agile environment and having to conduct all of my tests manually, I have realized the huge time value of being able to automatically test an application. \n\nNew Jest and Cypress project coming soon."
+    },
+    "notflix": {
+        "title":"Notflix",
+        "img":"/images/notflix.jpeg",
+        "link":"https://notflix.one",
+        "code":"https://github.com/dmroman395/Notflix",
+        "tech": ["React", "Firebase", "REST", "SASS", "Webpack"],
+        "info": {
+            "overview":"Comprehensive Netflix clone with full CRUD functionality",
+            "features":["Complete authentication system via Firebase", "Database with individual user watchlist data","REST API calls to TMDB for movie/show data","Infinte scrolling", "Search functionality"],
+            "lessons":"The biggest challenge I faced with this project was state management, which was greatly attributed to the fact that I did not have a full picture of the structure before I began coding. \n\nThis experinece helped me to realize the necessity of fully understanding the design of a system before building it. For the next version, I plan to redesign the entire application to leverage Redux and React Router."
+        }
+    },
+    "covid": {
+        "title":"COVID Tracker",
+        "img":"/images/covid.jpeg",
+        "link":"https://covid-tracker.info/",
+        "code":"https://github.com/dmroman395/covid-tracker-next",
+        "tech": ["React", "Next", "Redux", "React Three Fiber", "SASS", "Material UI", "Express", "REST" ],
+        "info": {
+            "overview":"Global & local COVID news and statistics tracker",
+            "features":["Clickable 3D globe", "Search functionality","Proxy server built with Express to hide API keys","State management handled via Redux", "Custom themes", "Light/Dark mode"],
+            "lessons":"This was my first project working with Redux and I immediately thought to myself, \"I will never go back passing state via props.\" This also gave me an opportunity to begin implementing what I've learned about back-end development by building a proxy server.\n\nAlso, working with 3D is hard! Respect to all the game devs."
+        }
+    },
+    "portfolio": {
+        "title":"Portfolio",
+        "img":"/images/portfolio.jpeg",
+        "link":null,
+        "code":"https://github.com/dmroman395/portfolio",
+        "tech": ["React", "Next", "Tailwind"],
+        "info": {
+            "overview":"Statically generated site showcasing my favorite projects",
+            "features":["Parallax scroll effect", "Intersection observer animations","Contact form"],
+            "lessons":"In addition to the parallax scrolling and intersection observers, in order to achieve the mental image of the design for this site, I had to learn a litle bit about video editing. Specifically, how to change the color of the video as well as how to make it a seamless loop."
+        }
     }
 }

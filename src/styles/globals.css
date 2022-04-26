@@ -53,6 +53,15 @@ html {
     scroll-behavior: smooth;
 }
 
+.feature::before {
+    content: "\2022";
+    color: #64f4ab;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+
+  }
+
 .parallax {
     transform-style: preserve-3d;
     z-index: -1;

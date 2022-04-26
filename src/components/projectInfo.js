@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from "react";
 
-function ProjectInfo({overview, inspiration, challenges, solutions, lessons, side}) {
+function ProjectInfo({overview, features,  lessons, side}) {
     const info = useRef()
 
     useEffect(() => {
@@ -25,25 +25,18 @@ function ProjectInfo({overview, inspiration, challenges, solutions, lessons, sid
         observer.observe(info.current)
     },[])
 
-    const chalList = challenges.map((challenge, i) => {
-        return <li key={i} className="tracking-wider md:leading-7">{challenge}</li>
+    const featList = features.map((feature, i) => {
+        return <li key={i} className="tracking-wider mb-2 list-none feature">{feature}</li>
     })
 
-    const solList = solutions.map((solution, i) => {
-        return <li key={i} className="tracking-wioder md:leading-7">{solution}</li>
-    })
     return (
         <div ref={info} className={`${side === 'left' ? 'hideProjectInfoLeft' : 'hideProjectInfoRight'} p-10 mb-12 mt-5 md:w-[50%] md:p-16`}>
             <h1 className="text-slate-100 my-5 text-xl font-semibold md:text-3xl lg:text-4xl">Overview</h1>
                 <p className="text-zinc-400 text-base tracking-wider leading-6 md:leading-7 md:my-10 lg:text-lg xl:text-xl xl:mb-12">{overview}</p>
-            <h1 className="text-slate-100 my-5 text-xl font-semibold md:text-3xl lg:text-4xl">Inspiration</h1>
-                <p className="text-zinc-400 text-base tracking-wider leading-6 md:leading-7 md:my-10 xl:text-xl xl:mb-12">{inspiration}</p>
-            <h1 className="text-slate-100 my-5 text-xl font-semibold md:text-3xl lg:text-4xl">Challenges</h1>
-                <ol className="text-zinc-400 pl-4 xl:pl-9 list-decimal ml-4 md:my-10 xl:mb-12 xl:text-xl">{chalList}</ol>
-            <h1 className="text-slate-100 my-5 text-xl font-semibold md:text-3xl lg:text-4xl">Solutions</h1>
-                <ol className="text-zinc-400 pl-4 xl:pl-9 list-decimal ml-4 md:my-10 xl:text-xl xl:mb-12">{solList}</ol>
+            <h1 className="text-slate-100 my-5 text-xl font-semibold md:text-3xl lg:text-4xl">Features</h1>
+                <ul className="text-zinc-400 text-base tracking-wider leading-6 md:leading-7 md:my-10 xl:text-xl xl:mb-12">{featList}</ul>
             <h1 className="text-slate-100 my-5 text-xl font-semibold md:text-3xl lg:text-4xl">What I learned</h1>
-                <p className="text-zinc-400 text-base tracking-wider leading-6 md:leading-7 xl:text-xl md:my-10">{lessons}</p>
+                <p className="text-zinc-400 text-base tracking-wider whitespace-pre-line leading-6 md:leading-7 xl:text-xl md:my-10">{lessons}</p>
         </div>
     )
 }

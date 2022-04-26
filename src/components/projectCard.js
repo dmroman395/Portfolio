@@ -41,8 +41,8 @@ function ProjectCard({title, img, link, code, tech, id, side}) {
                     <Image
                         alt='screenshot of project'
                         src={img}
-                        width={556}
-                        height={407}
+                        width={576}
+                        height={320}
                         layout='responsive'
                         className='rounded-lg'
                         priority
