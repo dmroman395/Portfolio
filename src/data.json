@@ -25,8 +25,8 @@
         "tech": ["React", "Firebase", "REST", "SASS", "Webpack"],
         "info": {
             "overview":"Comprehensive Netflix clone with full CRUD functionality",
-            "features":["Complete authentication system via Firebase", "Database with individual user watchlist data","REST API calls to TMDB for movie/show data","Infinte scrolling", "Search functionality"],
-            "lessons":"The biggest challenge I faced with this project was state management, which was greatly attributed to the fact that I did not have a full picture of the structure before I began coding. \n\nThis experinece helped me to realize the necessity of fully understanding the design of a system before building it. For the next version, I plan to redesign the entire application to leverage Redux and React Router."
+            "features":["Complete authentication system via Firebase", "Database with individual user watchlist data","REST API calls to TMDB for movie/show data","Infinite scrolling", "Search functionality"],
+            "lessons":"The biggest challenge I faced with this project was state management, which was greatly attributed to the fact that I did not have a full picture of the structure before I began coding. \n\nThis experience helped me to realize the necessity of fully understanding the design of a system before building it. For the next version, I plan to redesign the entire application to leverage Redux and React Router."
         }
     },
     "covid": {
@@ -50,7 +50,7 @@
         "info": {
             "overview":"Statically generated site showcasing my favorite projects",
             "features":["Parallax scroll effect", "Intersection observer animations","Contact form"],
-            "lessons":"In addition to the parallax scrolling and intersection observers, in order to achieve the mental image of the design for this site, I had to learn a litle bit about video editing. Specifically, how to change the color of the video as well as how to make it a seamless loop."
+            "lessons":"In addition to the parallax scrolling and intersection observers, in order to achieve the mental image of the design for this site, I had to learn a little bit about video editing. Specifically, how to change the color of the video as well as how to make it a seamless loop."
         }
     }
 }
