@@ -74,7 +74,7 @@ html {
 
 .background {
     z-index: 0;
-    transform: translateZ(-20px) translateY(-930px) scale(3.1);
+    transform: translateZ(-50px) translateY(-2290px) scale(6.2);
 }
 
 .greenBg {
