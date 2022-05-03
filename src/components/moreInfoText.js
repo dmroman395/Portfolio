@@ -32,7 +32,7 @@ function MoreInfoText({type, header, subtext, info}) {
             <h1 className="tracking-wide text-slate-100 text-2xl my-1 sm:text-4xl lg:text-4xl xl:text-5xl">{header}</h1>
             <h4 className='tracking-wide text-neutral-300 text-lg my-1 italic sm:text-2xl lg:text-3xl'>{subtext}</h4>
             <p className="tracking-wide whitespace-pre-line text-zinc-400 text-xs leading-6 sm:text-base lg:text-xl" id='infoList' dangerouslySetInnerHTML={{__html: modInfo}}></p>
-            {type === 'Skills' ? <a className="tracking-wide whitespace-pre-line greenText underline hover:cursor-pointer text-xs leading-6 sm:text-base lg:text-xl" href='./David M Roman Resume.pdf' target='_blank'>Learn more</a> : null}
+            {type === 'Skills' ? <a className="tracking-wide whitespace-pre-line greenText underline hover:cursor-pointer text-xs leading-6 sm:text-base lg:text-xl" href='./David M Roman Resume.pdf' target='_blank'>View Resume</a> : null}
             {type === 'Skills' ? <p className="text-xs italic text-zinc-400 tracking-wide lg:text-sm"><span className="greenText">*</span>Coming soon...</p> : null}
         </div>
     )

@@ -38,7 +38,7 @@
         "info": {
             "overview":"Global & local COVID news and statistics tracker",
             "features":["Clickable 3D globe", "Search functionality","Proxy server built with Express to hide API keys","State management handled via Redux", "Custom themes", "Light/Dark mode"],
-            "lessons":"This was my first project working with Redux and I immediately thought to myself, \"I will never go back passing state via props.\" This also gave me an opportunity to begin implementing what I've learned about back-end development by building a proxy server.\n\nAlso, working with 3D is hard! Respect to all the game devs."
+            "lessons":"This was my first project working with Redux and I immediately thought to myself, \"Why didn't I learn this earlier?!?\" This also gave me an opportunity to begin implementing what I've learned about back-end development by building a proxy server.\n\nAlso, working with 3D is hard! Respect to all the game devs."
         }
     },
     "portfolio": {
